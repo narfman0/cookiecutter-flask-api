@@ -1,0 +1,11 @@
+# Config file for automatic testing at travis-ci.org
+sudo: false  # http://docs.travis-ci.com/user/migrating-from-legacy/
+language: python
+env:
+- FLASK_APP={{ cookiecutter.app_name }}/app.py FLASK_DEBUG=1
+python:
+  - 2.7
+  - 3.6
+install:
+  - pip install -r requirements_test.txt
+script: tox

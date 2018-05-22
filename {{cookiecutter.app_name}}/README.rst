@@ -1,0 +1,35 @@
+===============================
+{{ cookiecutter.project_name }}
+===============================
+
+{{ cookiecutter.project_short_description}}
+
+
+Quickstart
+----------
+
+Run the following commands to bootstrap your environment ::
+
+    git clone https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}
+    cd {{cookiecutter.app_name}}
+    python -m venv .venv && source .venv/bin/activate
+    pip install -r requirements.txt
+
+In general, before running shell commands, set the ``FLASK_APP`` and
+``FLASK_DEBUG`` environment variables ::
+
+    export FLASK_APP=app.py
+    export FLASK_DEBUG=1
+
+
+Running Tests
+-------------
+
+To run all tests, run ::
+
+    tox
+
+LICENSE
+-------
+
+See accompanying LICENSE file for license information

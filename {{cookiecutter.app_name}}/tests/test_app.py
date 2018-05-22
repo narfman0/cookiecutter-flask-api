@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
-"""Test configs."""
-from {{cookiecutter.app_name}}.app import *
+""" Test configs """
+import unittest
+
+from {{cookiecutter.app_name}} import app
 
 
-def test_api_usage():
-    """ Test some API modules """
-    # TODO execute different tests verifying behavior
-    assert False
+class AppTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.app = app.create_app()
+
+    def test_cat_get(self):
+        rv = self.app.get('/api/v1')
+        import pdb; pdb.set_trace()
+        assert b'No entries here so far' in rv.data

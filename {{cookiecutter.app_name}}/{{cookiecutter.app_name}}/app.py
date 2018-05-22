@@ -18,7 +18,7 @@ def create_app():
 
 
 def register_blueprints(app):
-    app.register_blueprint(api.blueprint, url_prefix='api/1')
+    app.register_blueprint(api.blueprint, url_prefix='/api/v1')
 
 
 def register_errorhandlers(app):

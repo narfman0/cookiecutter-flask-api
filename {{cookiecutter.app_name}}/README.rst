@@ -18,9 +18,14 @@ Run the following commands to bootstrap your environment ::
 In general, before running shell commands, set the ``FLASK_APP`` and
 ``FLASK_DEBUG`` environment variables ::
 
-    export FLASK_APP=app.py
+    export FLASK_APP={{ cookiecutter.app_name }}/app.py
     export FLASK_DEBUG=1
 
+To run app::
+
+    flask run
+
+Then you may navigate the following url: `localhost:5000/api/v1/`. Hurrah!
 
 Running Tests
 -------------

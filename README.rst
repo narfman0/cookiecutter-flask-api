@@ -1,12 +1,12 @@
-cookiecutter-flask
-==================
+cookiecutter-flask-api
+======================
 
-A Flask template for cookiecutter_.
+A Flask and REST api with swagger template for cookiecutter_.
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 
-.. image:: https://travis-ci.org/narfman0/cookiecutter-flask.svg
-    :target: https://travis-ci.org/narfman0/cookiecutter-flask
+.. image:: https://travis-ci.org/narfman0/cookiecutter-flask-api.svg
+    :target: https://travis-ci.org/narfman0/cookiecutter-flask-api
     :alt: Build Status
 
 Usage
@@ -14,7 +14,7 @@ Usage
 ::
 
     $ pip install cookiecutter
-    $ cookiecutter gh:narfman0/cookiecutter-flask
+    $ cookiecutter gh:narfman0/cookiecutter-flask-api
 
 You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
 

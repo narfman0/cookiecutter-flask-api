@@ -13,7 +13,7 @@ class AppTestCase(TestCase):
     def setUp(self):
         self.app = TestApp(app.create_app())
 
-    def test_cat_get(self):
-        rv = self.app.get('/api/v1/')
+    def test_cats_get(self):
+        rv = self.app.get('/api/v1/cats/')
         data = json.loads(rv.body)
         self.assertEquals(1, int(data[0]['id']))

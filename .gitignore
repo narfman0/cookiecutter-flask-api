@@ -1,3 +1,7 @@
+# project specific
+flaskapp/*
+
+# prebaked .gitignore
 *.py[cod]
 
 # C extensions
@@ -16,6 +20,9 @@ develop-eggs
 .installed.cfg
 lib
 lib64
+venv
+.venv
+.env
 
 # Installer logs
 pip-log.txt
@@ -43,6 +50,3 @@ README.html
 
 # Cookiecutter
 output/
-
-myflaskapp/
-bower_components

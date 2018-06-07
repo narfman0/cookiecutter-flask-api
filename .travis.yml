@@ -2,14 +2,9 @@
 sudo: false  # http://docs.travis-ci.com/user/migrating-from-legacy/
 language: python
 python:
-  - 2.7
-  - 3.4
-  - 3.5
   - 3.6
 install:
   - pip install cookiecutter
-  - pip install invoke==0.14.0
-  - nvm install 6.10
-  - nvm use 6.10
+  - pip install invoke==1.0.0 tox
 script:
   - invoke test

@@ -18,7 +18,7 @@ CATS = [
     {'id': '1', 'name': 'Furball'},
 ]
 
-@api.route('/')
+@api.route('/cats')
 class CatList(Resource):
     @api.doc('list_cats')
     @api.marshal_list_with(cat)

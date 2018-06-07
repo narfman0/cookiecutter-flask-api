@@ -1,0 +1,23 @@
+service: {{ cookiecutter.app_name }}
+
+custom:
+  wsgi:
+    app: {{ cookiecutter.app_name }}.app
+    packRequirements: false
+  pythonRequirements:
+    dockerizePip: non-linux
+
+plugins:
+  - serverless-python-requirements
+  - serverless-wsgi
+
+provider:
+  name: aws
+  runtime: python3.6
+
+functions:
+  app:
+    handler: wsgi.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'

@@ -16,15 +16,24 @@ Usage
     $ pip install cookiecutter
     $ cookiecutter gh:narfman0/cookiecutter-flask-api
 
-You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
+You will be asked about your basic info (name, project name, app name, etc.).
+This info will be used in your new project. After generation, refer to the
+README in the project :)
 
 Features
 --------
 
-- coverage and ci support
-- Procfile for deploying to a PaaS (e.g. Heroku)
-- pytest unit testing (example tests included)
+- ci support
+- serverless template for cloud deploys and Procfile for deploying to a PaaS (e.g. Heroku)
+- tox/pytest unit testing (example test included)
 - api and swagger support
+
+TODO
+----
+
+* End-to-end test serverless (looks right syntactically, did not test it)
+* Make `cat` configurable
+* Ensure coverage/reports work
 
 LICENSE
 -------

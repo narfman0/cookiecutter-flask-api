@@ -33,7 +33,6 @@ TODO
 
 * End-to-end test serverless (looks right syntactically, did not test it)
 * Make `cat` configurable
-* Ensure coverage/reports work
 
 LICENSE
 -------

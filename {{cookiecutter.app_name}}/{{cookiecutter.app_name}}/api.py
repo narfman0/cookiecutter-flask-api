@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-from flask_restplus import Api, Namespace, Resource, fields
+from flask_restplus import Api
 
 from {{ cookiecutter.app_name }}.cats import api as ns_cats
 

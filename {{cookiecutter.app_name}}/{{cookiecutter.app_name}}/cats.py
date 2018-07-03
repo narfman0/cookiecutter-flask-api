@@ -1,6 +1,4 @@
-from flask import Blueprint
-
-from flask_restplus import Api, Namespace, Resource, fields
+from flask_restplus import Namespace, Resource, fields
 
 
 api = Namespace('cats', description='Cats related operations')

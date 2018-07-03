@@ -8,7 +8,13 @@
 Quickstart
 ----------
 
-Run the following commands to bootstrap your environment ::
+Bootstrap using pipenv::
+
+    git clone https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}
+    cd {{cookiecutter.app_name}}
+    pipenv install; pipenv shell
+
+Using inferior manual venv ::
 
     git clone https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}
     cd {{cookiecutter.app_name}}
@@ -18,7 +24,7 @@ Run the following commands to bootstrap your environment ::
 In general, before running shell commands, set the ``FLASK_APP`` and
 ``FLASK_DEBUG`` environment variables ::
 
-    export FLASK_APP={{ cookiecutter.app_name }}/app.py
+    export FLASK_APP={{ cookiecutter.app_name }}.app
     export FLASK_DEBUG=1
 
 To run app::

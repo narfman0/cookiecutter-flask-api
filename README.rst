@@ -32,7 +32,8 @@ TODO
 ----
 
 * End-to-end test serverless (looks right syntactically, did not test it)
-* Make `cat` configurable
+* Make `cat` configurable, multiple namespaces
+* Make pipenv or manual venv configurable via boolean
 
 LICENSE
 -------

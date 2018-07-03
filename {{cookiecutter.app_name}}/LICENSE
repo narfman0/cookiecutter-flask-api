@@ -1,3 +1,3 @@
-Copyright (c) {% now 'local', '%Y' %}, Cloudreach
+Copyright (c) {% now 'local', '%Y' %}, {{ cookiecutter.full_name }}
 
 All rights reserved.

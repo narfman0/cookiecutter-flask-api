@@ -1,6 +1,7 @@
 .
 pytest
 pytest-cov
+pytest-flake8
 flake8
 tox
 flask-webtest

@@ -26,7 +26,7 @@ class CatList(Resource):
         return CATS
 
 
-@api.route('/<id>')
+@api.route('/<id>/')
 @api.param('id', 'The cat identifier')
 @api.response(404, 'Cat not found')
 class Cat(Resource):

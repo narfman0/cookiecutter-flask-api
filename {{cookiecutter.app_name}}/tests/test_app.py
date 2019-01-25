@@ -22,6 +22,6 @@ class AppTestCase(TestCase):
         self.assertTrue(len(data["paths"]) > 0)
 
     def test_cats_get(self):
-        rv = self.app.get('/api/v1/cats/')
+        rv = self.app.get("/api/v1/cats/")
         data = json.loads(rv.data)
-        self.assertEquals(1, int(data[0]['id']))
+        self.assertEquals(1, int(data[0]["id"]))

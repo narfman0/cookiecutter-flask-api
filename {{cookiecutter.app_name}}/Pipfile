@@ -6,12 +6,11 @@ name = "pypi"
 [packages]
 flask-restplus = "*"
 flask = "*"
+gunicorn = "*"
 
 [dev-packages]
+pytest = "*"
+pytest-black = "*"
 pytest-cov = "*"
 "pytest-flake8" = "*"
 "flake8" = "*"
-flask-webtest = "*"
-
-[requires]
-python_version = "3.6"

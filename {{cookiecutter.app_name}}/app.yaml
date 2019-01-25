@@ -1,0 +1,2 @@
+entrypoint: gunicorn -b :$PORT {{ cookiecutter.app_name }}.wsgi:app
+runtime: python37

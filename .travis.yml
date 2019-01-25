@@ -1,10 +1,7 @@
-# Config file for automatic testing at travis-ci.org
-sudo: false  # http://docs.travis-ci.com/user/migrating-from-legacy/
 language: python
 python:
   - 3.6
 install:
-  - pip install cookiecutter
-  - pip install invoke==1.0.0 tox
+  - pip install invoke==1.0.0 pipenv cookiecutter
 script:
   - invoke test

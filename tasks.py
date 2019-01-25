@@ -14,7 +14,6 @@ with open(os.path.join(HERE, "cookiecutter.json"), "r") as fp:
 # Match default value of app_name from cookiecutter.json
 COOKIE = os.path.join(HERE, COOKIECUTTER_SETTINGS["app_name"])
 APP = os.path.join(COOKIE, COOKIECUTTER_SETTINGS["app_name"], "app.py")
-REQUIREMENTS = os.path.join(COOKIE, "requirements_test.txt")
 
 
 @task
@@ -34,10 +33,6 @@ def clean(ctx):
         print("Removed {0}".format(COOKIE))
     else:
         print("App directory does not exist. Skipping.")
-
-
-def _run_flask_command(ctx, command):
-    ctx.run("FLASK_APP={0} flask {1}".format(APP, command), echo=True)
 
 
 @task(pre=[build])
